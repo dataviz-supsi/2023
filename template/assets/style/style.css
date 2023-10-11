@@ -94,10 +94,15 @@ figure{
 	max-width: 100%;
 	height: auto;
 }
-.download {
+.download_big {
 	display: flex;
 	justify-content: space-between;
 	margin: 2rem 25%;
+}
+.download_small {
+	display: flex;
+	justify-content: space-between;
+	margin: 2rem 5%;
 }
 
 /* ---- footer -----*/
@@ -185,7 +190,7 @@ figcaption{
 	text-decoration: underline;
 	color: gray;
 }
-.download a:hover {  
+.download_ a:hover {  
 	color: black;
 }
 

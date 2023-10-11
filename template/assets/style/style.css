@@ -140,8 +140,8 @@ h4 {
 	margin: 0 0 0.5rem;
 }
 p{
-	font-size: 1.2rem;
-	line-height: 140%;
+	font-size: 1.3rem;
+	line-height: 1.4;
 	margin: 0 0 1rem;
 }
 figcaption{
@@ -164,7 +164,6 @@ ul{
 	display: inline-block;
 }
 #abstract{
-	font-size: 1.7rem;
 	margin-bottom: 2rem;
 }
 figcaption{
@@ -181,14 +180,14 @@ figcaption{
 #abstract p {
 	font-style: normal;
 	font-weight: normal;
-	font-size: 1.4rem;
-	line-height: 120%;
+	font-size: 1.6rem;
+	line-height: 1.2;
 }
 .download a {
 	text-decoration: underline;
 	color: gray;
 }
-.download_ a:hover {  
+.download a:hover {  
 	color: black;
 }
 
@@ -203,7 +202,7 @@ figcaption{
 	}
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 992px) {
 	h1 {
 		font-size: 1.9rem;
 	}

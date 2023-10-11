@@ -55,10 +55,7 @@ main{
 	position: absolute;
 }
 header, article, footer section {
-	margin: 2rem 20% 0; 
-	/*margin-top: 1rem;
-	margin-left: 25%;
-	margin-right: 20%;*/
+	margin: 2rem 30% 0;
 }
 header {
 	margin-top: 3rem;
@@ -143,7 +140,8 @@ h4 {
 	margin: 0 0 0.5rem;
 }
 p{
-	font-size: 1.1rem;
+	font-size: 1.2rem;
+	line-height: 140%;
 	margin: 0 0 1rem;
 }
 figcaption{
@@ -195,7 +193,15 @@ figcaption{
 }
 
 
+
 /* ---- tablet version -----*/
+
+@media only screen and (max-width: 1440px) {
+	header, article, footer section {
+		margin-left: 20%;
+		margin-right: 20%;
+	}
+}
 
 @media only screen and (max-width: 768px) {
 	h1 {

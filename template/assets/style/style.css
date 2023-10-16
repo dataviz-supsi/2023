@@ -230,6 +230,9 @@ figcaption{
 		justify-content: space-between;
 		margin: 1rem 5%;
 	}
+	.download_small {
+		margin: 0;
+	}
 	figcaption{
 		padding: 0%;
 	}

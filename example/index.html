@@ -157,10 +157,100 @@
 					<div style="width: 45%; height: 100px; background-color: blue;">Testo</div>
 				</div>
 			</section>
+
+			<article>
+				<section class="no_margin">
+					<p id="text">TEXT</p>
+				</section>
+			</article>
 			
+			<article>
+				<section id="button_container">
+					<div class="buttons" id="buttonA" style="opacity: 0.5;">Button A</div>
+					<div class="buttons" id="buttonB">Button B</div>
+				</section>
+				<section>
+					<img src="assets/images/03.png" alt="image 3" width="1920" height="1080" id="imageA"/>
+					<img src="assets/images/04.png" alt="image 4" width="1920" height="1080" style="display: none;" id="imageB"/>
+				</section>
+			</article>
+
 		</main>
 
 		<script src="assets/script/script.js" ></script>
+
+
+		<script>
+			// console.log("Ciao everybody")
+			// const school = "SUPSI"
+			// let count = 1
+			// console.log(school)
+			// console.log(count)
+			// count = count + 1
+			// console.log(count)
+
+			function button01(){
+				const text = document.getElementById("text")
+				// console.log(text)
+
+				text.addEventListener('click', function() {
+					text.style.color = "red"
+				})
+			}
+
+			function button(){
+				const buttonA = document.getElementById("buttonA")
+				const buttonB = document.getElementById("buttonB")
+
+				const imageA = document.getElementById("imageA")
+				const imageB = document.getElementById("imageB")
+
+				console.log(buttonA,buttonB,imageA,imageB)
+
+				buttonB.addEventListener('click', function() {
+					imageA.style.display = "none";
+					imageB.style.display = "block";
+					buttonB.style.opacity = "0.5";
+					buttonA.style.opacity = "1";
+				})
+
+				buttonA.addEventListener('click', function() {
+					imageB.style.display = "none";
+					imageA.style.display = "block";
+					buttonA.style.opacity = "0.5";
+					buttonB.style.opacity = "1";
+				})
+
+
+			}
+
+
+			
+			window.addEventListener("load", function(){
+				console.log("loaded")
+				button01()	
+				
+				button();
+	    	});
+
+		</script>
+
+		<style>
+			#button_container {
+				display: flex;
+				justify-content: space-between;
+			}
+
+			.buttons {
+				width: 380px;
+				height: 50px;
+				background-color: green;
+				text-align: center;
+				color: white;
+				padding: 10px;
+			}
+		</style>
+
 
 	</body>
 </html>

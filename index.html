@@ -64,10 +64,6 @@
 				<span class="name">Malaria deaths in Africa</span>
 			</a></li>
 		</ul>
-
-
-		
-
 		<!-- <ul>
 			<li><a href="template" class="project">
 				<span class="author">Authors</span>
@@ -92,34 +88,14 @@
 
 		document.addEventListener('keypress', (event) => {
 
-
 			let key = event.key;
 			let url = "docu/";
-			//console.log(key);
 
-			if (key==1){
-				url += '1_Duv-Man.pdf'
-			}
-			else if (key==2){
-				url += '2_Pui-Pas-Vai.pdf';
-			}
-			else if (key==3){
-				url += '3_Far-Las-Oyu.pdf';
-			}
-			else if (key==4){
-				url += '4_Acq-Rav-Bil.pdf';
-			}
-			else if (key==5){
-				url += '5_Cos-Del-Som.pdf';
-			}
-			else if (key==6){
-				url += '6_Rom-Tab.pdf';
-			}
-			else if (key=="t"){
-				url = 'template';
+			if (key >= 1 && key <= 6){
+				url += '0' + key.toString(2) + '.pdf'
+				window.open(url);
 			}
 			
-			window.open(url);
 		});
 
 	</script>
